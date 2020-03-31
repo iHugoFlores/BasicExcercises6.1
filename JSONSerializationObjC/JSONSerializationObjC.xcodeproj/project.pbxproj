@@ -14,6 +14,9 @@
 		3A67DAFF243398DB00BA4B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A67DAFE243398DB00BA4B70 /* Assets.xcassets */; };
 		3A67DB02243398DB00BA4B70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A67DB00243398DB00BA4B70 /* LaunchScreen.storyboard */; };
 		3A67DB05243398DB00BA4B70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A67DB04243398DB00BA4B70 /* main.m */; };
+		3A67DB0D2433996E00BA4B70 /* JSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A67DB0C2433996E00BA4B70 /* JSONUtil.m */; };
+		3A67DB0F243399A100BA4B70 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A67DB0E243399A100BA4B70 /* weather.json */; };
+		3A67DB1224339DB400BA4B70 /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A67DB1124339DB400BA4B70 /* ResponseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		3A67DB01243398DB00BA4B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A67DB03243398DB00BA4B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A67DB04243398DB00BA4B70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A67DB0B2433996E00BA4B70 /* JSONUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONUtil.h; sourceTree = "<group>"; };
+		3A67DB0C2433996E00BA4B70 /* JSONUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONUtil.m; sourceTree = "<group>"; };
+		3A67DB0E243399A100BA4B70 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		3A67DB1024339DB400BA4B70 /* ResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
+		3A67DB1124339DB400BA4B70 /* ResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 		3A67DAF1243398D900BA4B70 /* JSONSerializationObjC */ = {
 			isa = PBXGroup;
 			children = (
+				3A67DB0E243399A100BA4B70 /* weather.json */,
 				3A67DAF2243398D900BA4B70 /* AppDelegate.h */,
 				3A67DAF3243398D900BA4B70 /* AppDelegate.m */,
 				3A67DAF5243398D900BA4B70 /* SceneDelegate.h */,
@@ -72,6 +81,10 @@
 				3A67DB00243398DB00BA4B70 /* LaunchScreen.storyboard */,
 				3A67DB03243398DB00BA4B70 /* Info.plist */,
 				3A67DB04243398DB00BA4B70 /* main.m */,
+				3A67DB0B2433996E00BA4B70 /* JSONUtil.h */,
+				3A67DB0C2433996E00BA4B70 /* JSONUtil.m */,
+				3A67DB1024339DB400BA4B70 /* ResponseModel.h */,
+				3A67DB1124339DB400BA4B70 /* ResponseModel.m */,
 			);
 			path = JSONSerializationObjC;
 			sourceTree = "<group>";
@@ -133,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A67DB0F243399A100BA4B70 /* weather.json in Resources */,
 				3A67DB02243398DB00BA4B70 /* LaunchScreen.storyboard in Resources */,
 				3A67DAFF243398DB00BA4B70 /* Assets.xcassets in Resources */,
 				3A67DAFD243398D900BA4B70 /* Main.storyboard in Resources */,
@@ -147,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A67DAFA243398D900BA4B70 /* ViewController.m in Sources */,
+				3A67DB0D2433996E00BA4B70 /* JSONUtil.m in Sources */,
 				3A67DAF4243398D900BA4B70 /* AppDelegate.m in Sources */,
 				3A67DB05243398DB00BA4B70 /* main.m in Sources */,
+				3A67DB1224339DB400BA4B70 /* ResponseModel.m in Sources */,
 				3A67DAF7243398D900BA4B70 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

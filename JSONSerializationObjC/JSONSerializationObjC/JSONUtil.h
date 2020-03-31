@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ResponseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JSONUtil : NSObject
-
++ (NSData *)readRawJSON;
++ (NSDictionary *)readJSONAsStringMap;
 @end
 
 NS_ASSUME_NONNULL_END

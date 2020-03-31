@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "JSONUtil.h"
+#import "ResponseModel.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSDictionary *jsonDict = [JSONUtil readJSONAsStringMap];
 }
 
 

@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ResponseModel : NSObject
 
+@property double latitude;
+@property double longitude;
+@property NSString *timezone;
+
+- (instancetype)initWithJSONDictionary:(NSDictionary *)JSONDictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END
